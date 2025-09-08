@@ -8,11 +8,11 @@ logger = logging.getLogger(__name__)
 # loyalty: Loyalty - points, tiers, cross-location, redemption
 # Details: points, tiers, cross-location
 
-class LoyaltyStatus(str, Enum):
+class LoyaltyExtraStatus(str, Enum):
     PENDING='pending'; ACTIVE='active'; FAILED='failed'
 
 @dataclass
-class LoyaltyEntity:
+class LoyaltyExtraEntity:
     """Loyalty - points, tiers, cross-location, redemption"""
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
     created_at: float = field(default_factory=time.time)

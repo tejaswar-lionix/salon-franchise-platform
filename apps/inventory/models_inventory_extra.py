@@ -8,11 +8,11 @@ logger = logging.getLogger(__name__)
 # inventory: Inventory - retail products per location, stock, par
 # Details: retail, stock, par
 
-class InventoryStatus(str, Enum):
+class InventoryExtraStatus(str, Enum):
     PENDING='pending'; ACTIVE='active'; FAILED='failed'
 
 @dataclass
-class InventoryEntity:
+class InventoryExtraEntity:
     """Inventory - retail products per location, stock, par"""
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
     created_at: float = field(default_factory=time.time)

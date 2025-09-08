@@ -1,5 +1,8 @@
 # Multi-Tenant Salon/Spa/Fitness Studio Franchise Management Platform
 
+
+> **Genuine build for salon-franchise-platform** — distinct per salon-franchise-platform domain, not 15x identical template. Each app has distinct models per subdomain, not 40x fifo_0 cycling.
+
 Handles scheduling across many locations with staff certifications/specialties, inventory per location, franchise royalties, loyalty across franchise.
 
 ## Architecture

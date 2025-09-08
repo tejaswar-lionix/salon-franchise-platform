@@ -8,11 +8,11 @@ logger = logging.getLogger(__name__)
 # franchise: Franchise - royalty, fees, FDD, territory
 # Details: royalty 6%, fees, FDD
 
-class FranchiseStatus(str, Enum):
+class FranchiseExtraStatus(str, Enum):
     PENDING='pending'; ACTIVE='active'; FAILED='failed'
 
 @dataclass
-class FranchiseEntity:
+class FranchiseExtraEntity:
     """Franchise - royalty, fees, FDD, territory"""
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
     created_at: float = field(default_factory=time.time)
